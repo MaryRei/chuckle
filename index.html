@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Chuckle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <main>
+    <h1>Chuckle🕷</h1>
+    <h3 id="feedback"></h3>
+    <div id="container">
+      <form method="post" id="form">
+        <input type="text" id="word1" pattern="[A-Za-z]" maxlength="5" onkeypress="return pressEnter(event)"><br>
+        <input type="text" id="word2" pattern="[A-Za-z]" maxlength="5" disabled onkeypress="return pressEnter(event)"><br>
+        <input type="text" id="word3" pattern="[A-Za-z]" maxlength="5" disabled onkeypress="return pressEnter(event)"><br>
+        <input type="text" id="word4" pattern="[A-Za-z]" maxlength="5" disabled onkeypress="return pressEnter(event)"><br>
+        <input type="text" id="word5" pattern="[A-Za-z]" maxlength="5" disabled onkeypress="return pressEnter(event)"><br>
+      </form>
+    </div>
+      <button class="key" id="q">q</button> <button class="key" id="w">w</button> <button class="key" id="e">e</button> <button class="key" id="r">r</button>
+      <button class="key" id="t">t</button> <button class="key" id="y">y</button> <button class="key" id="u">u</button> <button class="key" id="i">i</button> <button class="key" id="o">o</button> <button class="key" id="p">p</button> <button class="key" id="backspace">back</button><br>
+      
+      <button class="key" id="a">a</button> <button class="key" id="s">s</button> <button class="key" id="d">d</button> <button class="key" id="f">f</button> <button class="key" id="g">g</button> <button class="key" id="h">h</button> <button class="key" id="j">j</button> <button class="key" id="k">k</button> <button class="key" id="l">l</button><br>
+      
+      <button class="key" id="z">z</button> <button class="key" id="x">x</button> <button class="key" id="c">c</button> <button class="key" id="v">v</button> <button class="key" id="b">b</button> <button class="key" id="n">n</button> <button class="key" id="m">m</button>
+      
+    <br><button id="guessButton" onclick="getInput(this)">Guess</button>
+    </main>
+    <script src="game.js">
+
+    </script>
+
+    
+  </body>
+</html>
